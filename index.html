@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>notes</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav id="sidebar" class="hidden">
+        <button id="close-nav">✖</button>
+
+        <div>
+          <button class="newnote" id="add-note">
+            <i class="fa-solid fa-plus"></i> new note
+          </button>
+        </div>
+        <div class="notebook">
+          <h4>your notes</h4>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </nav>
+
+      <!-- Popup Modal -->
+      <div id="note-modal" class="modal hidden">
+        <div class="modal-content">
+          <button id="close-modal">✖</button>
+          <div id="modal-note-area" contenteditable="true"></div>
+          <button class="btnsave" id="save-modal-note">Save Note</button>
+        </div>
+      </div>
+      <button id="toggle-nav"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
